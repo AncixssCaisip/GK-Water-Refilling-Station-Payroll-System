@@ -1,0 +1,16 @@
+/* Order water page */
+.pad { padding: 12px 14px 16px; }
+.row { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+
+.table-box { margin-top: 70px; border: 2px solid #111; overflow-x: auto; box-shadow: 0 16px 30px rgba(0,0,0,.25); }
+table { width: 100%; border-collapse: collapse; min-width: 820px; font-size: 16px; }
+th { font-weight: 400; text-align: left; padding: 12px 10px; border-bottom: 2px solid #111; }
+td { padding: 9px 10px; border-top: 1px solid #9bb3cf; }
+.status { display: inline-block; padding: 0 10px; border-radius: 99px; font-size: 14px; font-weight: 700; background: #d9eefa; }
+.status.delivered { background: #e6f4ec; color: #18794e; }
+.empty { padding: 16px; color: #4a6d94; }
+
+@media (max-width: 760px) {
+  .row { grid-template-columns: 1fr; }
+  .table-box { margin-top: 24px; }
+}

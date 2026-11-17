@@ -1,0 +1,28 @@
+/* Profile page + pop-ups (edit profile, change password) */
+.profile-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; align-items: start; }
+.ptitle { display: flex; align-items: center; gap: 12px; font-size: 32px; font-weight: 800; margin-bottom: 10px; }
+.ptitle svg { width: 54px; height: 54px; }
+.stack { display: grid; gap: 18px; }
+.photo-card { text-align: center; padding: 16px; }
+.avatar { width: 130px; height: 130px; border-radius: 50%; border: 5px solid #10447f; object-fit: cover;
+          background: #10447f; display: inline-flex; align-items: flex-end; justify-content: center; overflow: hidden; }
+.avatar svg { width: 100px; height: 100px; }
+.photo-card label.btn { font-size: 17px; padding: 6px 18px; background: #10447f; }
+.hd { background: #10447f; color: #fff; font-weight: 800; font-size: 22px; padding: 12px 16px; display: flex; align-items: center; gap: 10px; }
+.hd svg { width: 30px; height: 30px; }
+.rows { padding: 10px 18px 14px; }
+.rows p { margin: 10px 0; font-size: 19px; font-weight: 700; }
+.rows span { font-weight: 400; }
+.actions { display: grid; gap: 12px; padding: 14px; }
+
+
+.overlay { position: fixed; inset: 0; background: rgba(0,0,0,.5); display: none; align-items: center; justify-content: center; padding: 16px; z-index: 9; }
+.overlay.open { display: flex; }
+.modal { width: min(460px, 100%); padding: 16px; }
+.modal h2 { font-size: 26px; font-weight: 800; }
+.modal-msg { color: #b42318; font-weight: 600; }
+
+
+@media (max-width: 760px) {
+  .profile-grid { grid-template-columns: 1fr; }
+}
